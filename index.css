@@ -39,6 +39,7 @@ h1{
 
 .hero-text h1 {
     font-size: 2.5rem;
+    margin-top: -150px;
 }
 
 .hero-text p {
@@ -80,304 +81,11 @@ h1{
     transform: translateY(-10px);  /* 輕微上移 */
 }
 
-.com_game{
-    height: 93vh;
-    position: relative;
-    margin-bottom: 50px;
-}
-
-.phone_game{
-    display: none;
-}
-
-#wood_up,#wood_down{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    height: 220px;
-}
-
-#wood_down{
-    width: 70%;
-}
-
-.wood{
-    width: 14.3%;
-    background: url(./photo/index/wood_1.png) no-repeat;
-    background-size: 65px;
-    background-position: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-}
-
-.wood_down{
-    width: 16.66%;
-}
-
-.wood p{
-    position: absolute;
-    writing-mode: vertical-lr;
-    bottom: 18px;
-    letter-spacing: 4px;
-    height: 150px;
-    margin: 0;
-    left: 47%;
-}
-
-/* --------------------木板翻面---------------------- */
-#wood_1:hover,#wood_2:hover,#wood_3:hover,#wood_4:hover,#wood_5:hover,#wood_6:hover,#wood_7:hover,#wood_8:hover,#wood_9:hover,#wood_10:hover,#wood_11:hover,#wood_12:hover,#wood_13:hover,#wood_14:hover > .wood{
-    background: url(./photo/index/wood_2.png) no-repeat;
-    background-size: 65px;
-    background-position: center;
-}
-
-#wood_1-2,#wood_2-2,#wood_3-2,#wood_4-2,#wood_5-2,#wood_6-2,#wood_7-2,#wood_8-2,#wood_9-2,#wood_10-2,#wood_11-2,#wood_12-2,#wood_13-2{
-    display: none;
-}
-
-#wood_1:hover > #wood_1-1{
-    display: none;
-}
-
-#wood_1:hover > #wood_1-2{
-    display: block;
-}
-
-#wood_2:hover > #wood_2-1{
-    display: none;
-}
-
-#wood_2:hover > #wood_2-2{
-    display: block;
-}
-
-#wood_3:hover > #wood_3-1{
-    display: none;
-}
-
-#wood_3:hover > #wood_3-2{
-    display: block;
-}
-
-#wood_4:hover > #wood_4-1{
-    display: none;
-}
-
-#wood_4:hover > #wood_4-2{
-    display: block;
-}
-
-#wood_5:hover > #wood_5-1{
-    display: none;
-}
-
-#wood_5:hover > #wood_5-2{
-    display: block;
-}
-
-#wood_6:hover > #wood_6-1{
-    display: none;
-}
-
-#wood_6:hover > #wood_6-2{
-    display: block;
-}
-
-#wood_7:hover > #wood_7-1{
-    display: none;
-}
-
-#wood_7:hover > #wood_7-2{
-    display: block;
-}
-
-#wood_8:hover > #wood_8-1{
-    display: none;
-}
-
-#wood_8:hover > #wood_8-2{
-    display: block;
-}
-
-#wood_9:hover > #wood_9-1{
-    display: none;
-}
-
-#wood_9:hover > #wood_9-2{
-    display: block;
-}
-
-#wood_10:hover > #wood_10-1{
-    display: none;
-}
-
-#wood_10:hover > #wood_10-2{
-    display: block;
-}
-
-#wood_11:hover > #wood_11-1{
-    display: none;
-}
-
-#wood_11:hover > #wood_11-2{
-    display: block;
-}
-
-#wood_12:hover > #wood_12-1{
-    display: none;
-}
-
-#wood_12:hover > #wood_12-2{
-    display: block;
-}
-
-#wood_13:hover > #wood_13-1{
-    display: none;
-}
-
-#wood_13:hover > #wood_13-2{
-    display: block;
-}
-/* --------------------木板翻面---------------------- */
-
-#wood_1{
-    position: relative;
-}
-
-#wood_1-1{
-    position: absolute;
-    left: 43%;
-}
-
-#wood_1-2{
-    position: absolute;
-    right: 5%;
-}
-
-.videobox{
-    background: url(./photo/index/cloud.png);
-    background-repeat: repeat-x;
-    background-position: center;
-    background-size: 120%;
-}
-
-.video{
-    width: 560px;
-    height: 315px;
-    margin: 50px auto 150px;
-    text-align: center;
-}
-
-iframe{
-    width: 100%;
-    height: 100%;
-}
-
 /* -----------------手機版----------------- */
 @media screen and (max-width:1024px){
-    .com_game{
-        display: none;
-    }
-
-    .phone_game{
-        display: block;
-        height: 600px;
-        position: relative;
-        bottom: 140px;
-    }
-
     h1{
         font-size: 24px;
         margin-bottom: 0;
-    }
-
-    .phone_woodUp,.phone_woodDown{
-        width: 80%;
-        display: flex;
-        height: 250px;
-        margin: 0 auto;
-    }
-
-    .phone_wood{
-        justify-content: center;
-        width: 16.66%;
-    }
-
-    .phone_wood3{
-        background: url(/photo/index/phone_wood_3字.png) no-repeat;
-        background-size: 50px;
-        background-position: top;
-    }
-
-    .phone_wood4{
-        background: url(/photo/index/phone_wood_4字.png) no-repeat;
-        background-size: 50px;
-        background-position: top;
-    }
-
-    .phone_wood5{
-        background: url(/photo/index/phone_wood_5字.png) no-repeat;
-        background-size: 50px;
-        background-position: top;
-    }
-
-    .phone_wood6{
-        background: url(/photo/index/phone_wood_6字.png) no-repeat;
-        background-size: 50px;
-        background-position: top;
-    }
-
-    .phone_wood7{
-        background: url(/photo/index/phone_wood_7字.png) no-repeat;
-        background-size: 50px;
-        background-position: top;
-    }
-
-    .phone_wood p{
-        writing-mode: vertical-lr;
-        font-size: 22px;
-        color: #614728;
-        margin: 0 auto;
-        position: relative;
-        top: 5px;
-    }
-
-    .phone_woodDown{
-        position: relative;
-        bottom: 50px;
-    }
-
-    #phone_woodDown{
-        background-position: center;
-    }
-
-    #woodDown_1,#woodDown_2,#woodDown_3,#woodDown_4,#woodDown_5,#woodDown_6,#woodDown_7{
-        position:relative;
-    }
-
-    #woodDown_1{
-        top:45px;
-    }
-
-    #woodDown_2,#woodDown_4{
-        top:60px;
-    }
-
-    #woodDown_3{
-        top:15px;
-    }
-
-    #woodDown_5{
-        top:30px;
-    }
-
-    #woodDown_6,#woodDown_7{
-        top:-1px;
-    }
-
-    #woodDown-6{
-        margin-bottom:20px;
     }
 
     .myPopup{
@@ -437,83 +145,50 @@ iframe{
 }
 
 @media screen and (max-width:768px){
-    .video{
-        width: 400px;
-        height: 225px;
-    }
-
     .hero {
-        flex-direction: column;
-        text-align: center;
         height: auto;
-        padding: 50px 5%;
+        justify-content: center;  /* 垂直置中 */
+        margin-top: 70px;
     }
 
     .hero-text {
-        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        padding-right: 0;
+        width: 30%;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-right: -10px;
+    }
+
+    .hero-text p {
+        font-size: 1.5rem;
+        margin-bottom: -50px;
+    }
+
+    .hero-image-container {
+        width: 70%;
+        height: 50vh;  /* 設定為 50vh，保證圖片顯示不會佔太多空間 */
     }
 
     .hero-image {
         width: 100%;
-        margin-top: 30px;
-    }
-
-    .curved-image {
-        width: 80%;
     }
 }
 
 @media screen and (max-width:500px){
-    .phone_woodUp,.phone_woodDown{
-        width: 95%;
+    .hero-text h1 {
+        font-size: 1.5rem;
     }
 
-    .phone_woodDown{
-        position: relative;
-        bottom: 100px;
+    .hero-text p {
+        font-size: 1.2rem;
     }
 
-    .phone_wood3,.phone_wood4,.phone_wood5,.phone_wood6,.phone_wood7{
-        background-size: 40px;
-    }
-
-    .phone_wood p{
-        font-size: 18px;
-        top: 0px;
-    }
-
-    #woodDown_1{
-        top:55px;
-    }
-
-    #woodDown_2,#woodDown_4{
-        top:68px;
-    }
-
-    #woodDown_3{
-        top:30px;
-    }
-
-    #woodDown_5{
-        top:45px;
-    }
-
-    #woodDown-6{
-        margin-top:10px;
-    }
-
-    .videobox{
-        position: relative;
-        bottom: 50px;
-    }
-
-    .video{
-        width: 288px;
-        height: 162px;
-        margin: 0 auto 25px;
-    }
-
-    .video p{
-        font-size: 12px;
+    .hero-image-container {
+        height: 40vh;  /* 更小的圖片顯示區域 */
     }
 }
