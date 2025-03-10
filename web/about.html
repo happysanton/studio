@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="same.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" href="./photo/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap" rel="stylesheet">
+    <title>肝掰</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <nav id="com_nav"> 
+
+            <div class="nav_left">
+
+                <a href="index.html"><img src="./photo/logo.png" alt="logo"></a>
+            
+            </div>
+
+            <div class="nav_right">
+
+                <div class="nav_about">
+
+                    <img src="./photo/fan.png" alt="fan" width="35px">
+
+                    <a href="about.html">關於展覽</a>
+
+                </div>
+
+                <div class="nav_about">
+
+                    <img src="./photo/fan.png" alt="fan" width="35px">
+
+                    <a href="aboutworks.html">關於作品</a>
+                    
+                </div>
+        
+            </div>
+
+        </nav>
+
+        <nav id="phone_nav">
+
+            <div id="myNav" class="phone_menu overlay">
+                
+                <a href="javascript:void(0)" onclick="closeNav()" style="margin-bottom:10px;position:relative;bottom:10px;">&times;</a>
+
+                <div class="overlay-content">
+                    <a href="index.html" style="position:relative;bottom:40px;">首頁</a>
+
+                    <div class="about">
+
+                        <a href="about.html" style="margin-bottom:10px;">關於展覽</a>
+
+                        <a href="about.html"><img src="./photo/menu_line2.png" width="300px" style="display:block;margin:auto;position:relative;bottom:50px;"></a>
+                    
+                        <p><a href="about.html#idea" id="font-size">展覽理念</a></p>
+                        <p><a href="about.html#place" id="font-size">展覽地點</a></p>
+                        <p><a href="about.html#team" id="font-size">籌備團隊</a></p>
+                        <p><a href="about.html#teachers" id="font-size">班導師</a></p>
+
+                    </div>
+                    
+                    <div class="aboutworks">
+                        <a href="aboutworks.html"style="margin-bottom:10px;">關於作品</a>
+                        <a href="aboutworks.html"><img src="./photo/menu_line2.png" width="300px" style="display:block;margin:auto;position:relative;bottom:50px;"></a>
+                        
+                        <p><a href="aboutworks.html#multimedia" id="font-size">多媒體</a></p>
+                        <p><a href="aboutworks.html#theses" id="font-size" style="margin-bottom:30px;">論文</a></p>
+                    
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <img id="phone_menu" src="./photo/menu_phone.png" alt="menu" width="150px" onclick="openNav()">
+
+            <a href="index.html"><img id="phone_logo" src="./photo/logo.png" alt="logo" width="80px"></a>
+
+        </nav>
+
+        <div class="empty"></div>
+
+        <div id="sidebar"  onmouseleave="menuOut();">
+
+            <a href="javascript:void(0)" onclick="closeSide()" style="position:relative;left:150px;top:10px;">&times;</a>
+
+            <a href="index.html" style="top:5%;">首頁</a>
+
+            <a href="about.html" style="top:20%;">關於展覽</a>
+            <img src="./photo/menu_line.png" width="100%" style="position: absolute;top:29%;left:15%;">
+            <a href="about.html#idea" style="top:33%;font-size:16px;">展覽理念</a>
+            <a href="about.html#place" style="top:41%;font-size:16px;">展覽地點</a>
+            <a href="about.html#team" style="top:49%;font-size:16px;">籌備團隊</a>
+            <a href="about.html#teachers" style="top:57%;font-size:16px;">班導師</a>
+
+            <a href="aboutworks.html" style="top:70%;">關於作品</a>
+            <img src="./photo/menu_line.png" width="100%" style="position: absolute;top:79%;left:15%;">
+            <a href="aboutworks.html#multimedia" style="top:82%;font-size:16px;">多媒體</a>
+            <a href="aboutworks.html#theses" style="top:90%;font-size:16px;">論文</a>
+
+        </div>
+
+        <div id="com_menu">
+
+            <img id="menu" onmouseenter="menuIn();" src="./photo/menu.png" alt="menu" width="25px">
+       
+        </div>
+
+        <div id="idea">
+
+            <img class="fans" src="./photo/about/展覽理念.png" width="60px">
+            <h1 style="display:inline;position:relative;left:5px;top:5px;">展覽理念</h1>
+            <img class="fans" src="./photo/about/展覽理念.png" width="60px">
+
+            <div class="idea">
+
+                <p>由普遍學生對於畢業製作的第一印象——</p>
+                <p>心力交瘁、耗時一年作為發想，<span class="br_500"><br></span>取名為《肝掰》，</p>
+                <p>意即展覽內皆為學生<span class="br"><br></span><span style="border-bottom:3px solid rgb(255, 222, 133);padding-bottom:5px;">「與自己的肝說掰掰」</span>後的成品，</p>
+                <p>並且結合日文諧音「乾杯」的意象：</p>
+                <p><span style="border-bottom:3px solid rgb(255, 222, 133);padding-bottom:5px;">工作到一段落，結束後放鬆的意義。</span></p>
+                <p>亦代表111級在傳科系四年生活的完結，</p>
+                <p>在即將各奔東西之際，<span style="border-bottom:3px solid rgb(255, 222, 133);padding-bottom:5px;"><span class="br"><br></span>最後一次全班一起乾一杯</span>。</p>
+        
+            </div>
+            
+            <img id="cloud" src="./photo/about/cloud.png" width="100%">
+
+        </div>
+
+        <div id="place">
+
+            <img class="fans" src="./photo/about/展覽理念.png" width="60px">
+            <h1 style="display:inline;position:relative;left:5px;top:5px;">展覽地點</h1>
+            <img class="fans" src="./photo/about/展覽理念.png" width="60px">
+            <h2 id="en-h2">ACCESS MAP</h2>
+
+            <div class="mapBox">
+
+                <div class="map">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2062.4935568649057!2d120.99699441323062!3d24.786588795503775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34683611e7d11a8b%3A0x9d8d2713a6d09b34!2z5ZyL56uL5Lqk6YCa5aSn5a245rWp54S25ZyW5pu46aSo!5e0!3m2!1szh-TW!2stw!4v1628500930462!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    <div class="com_map_word">
+
+                        <img class="japan" src="./photo/footer.png" width="35px">
+                        <p style="font-size:22px;display:inline;position:relative;top:5px;">開幕茶會</p>
+                      
+                        <div style="position:relative;top:-25px;">
+                        
+                            <div style="width:60px;margin:0;display:inline-block;position:relative;top:-20px;">
+                                <p>時間</p>
+                                <p>地點</p>
+                            
+                            </div>
+            
+                            <div style="width:370px;display:inline-block;letter-spacing:5px;position:relative;top:42px;">
+            
+                                <span>2021年12月10日 13:30～20:30</span>
+                                <br><br>
+                                <span style="position:relative;top:-8px;left:6px;line-height:1.8;">新竹市東區大學路1001號<br>國立陽明交通大學浩然圖書館<br>B1國際會議廳</span>
+                            
+                            </div>
+                            
+                        </div>
+    
+                    </div>
+
+                    <h3>開幕茶會</h3>
+
+                </div>
+
+                <div class="map" style="margin-right:20px;">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.917284951025!2d121.49948511484199!3d25.03688098397103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9a8bc1fe957%3A0x8004f7cdc87668e0!2z5Ymd55qu5a-u5ryU6Jed5buz!5e0!3m2!1szh-TW!2stw!4v1628501278242!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <img id="beer" src="./photo/about/啤酒.png" width="200px">
+
+                    <div class="com_map_word">
+
+                        <img class="japan" src="./photo/footer.png" width="35px">
+                        <p style="font-size:22px;display:inline;position:relative;top:5px;">正式展覽</p>
+                      
+                        <div style="position:relative;top:-20px;">
+                        
+                            <div style="width:60px;margin:0;display:inline-block;">
+
+                                <p>時間</p>
+                                <p>地點</p>
+                            
+                            </div>
+            
+                            <div style="width:370px;display:inline-block;letter-spacing:5px;position:relative;top:35px;">
+            
+                                <span style="letter-spacing:3px;">2021年12月17日至19日 9:00～18:00</span>
+                                <br><br>
+                                <span style="position:relative;top:-8px;left:6px;line-height:1.8;">臺北市萬華區康定路173巷<br>剝皮寮演藝廳145號～151號</span>
+                            
+                            </div>
+                            
+                        </div>
+    
+                    </div>
+
+                    <h3>正式展覽</h3>
+
+                </div>
+
+            </div>
+
+            <div class="phone_map_word">
+
+                <h2>開幕茶會</h2>
+                <img src="./photo/about/line.png" width="80%">
+                <p>2021年12月10日 13:30～20:30</p>
+                <p>新竹市東區大學路1001號<br>國立陽明交通大學浩然圖書館<br class="phone_map_word_br">B1國際會議廳</p>
+                <br>
+
+                <h2>正式展覽</h2>
+                <img src="./photo/about/line.png" width="80%">
+                <p>2021年12月17日至19日 8:00~17:00</p>
+                <p>台北市萬華區康定路173巷<br>剝皮寮演藝廳145號～151號</p>
+
+        </div>
+
+
+        </div>
+
+        <div id="teamBox">
+
+            <img id="team_cloud_top" class="team_cloud" src="./photo/about/雲2.png" width="500px">
+            <img id="team_cloud_bottom" class="team_cloud" src="./photo/about/雲2.png" width="500px">
+
+            <div class="crewBox">
+
+                <img id="team" src="./photo/about/cat.png" width="200px">
+
+                <h2>籌備<br>團隊</h2>
+                <p id="crew_p">CREW</p>
+
+                <div class="crew">
+                    
+                        <div id="crew1" class="crew_word">
+
+                            <img id="crew_img1" src="./photo/about/plate.png" width="90%">
+
+                            <p onmouseenter="rotate1();" onmouseout="rotate_back1();" onclick="popup1();" id="crew_p1">行政組</p>
+                            
+                        </div>
+
+                        <div id="crew_popup1" class="crew_popup">
+
+                            <div class="popupBox">
+
+                                <div class="popup">
+
+                                    <a onclick="close1()" href="javascript:void(0)"><img class="crew_close" src="./photo/about/crew_close.png" alt="close" width="50px" style="position:absolute;top:20px;right:20px;z-index:200;"></a>
+
+                                    <img class="crew_wood" src="./photo/about/crew_wood.png" width="250px">
+                                    <h3>行政組</h3>
+
+                                    <p>畢籌的最佳推手，流程、金錢、作品由我們一手統籌！</p>
+
+                                    <div class="people">
+
+                                        <img src="./work photos/member/陳瑋.JPEG" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>陳瑋</p>
+                                        <span>總召——<br>對外代表本屆畢展，對內帶領幹部執行、協調相關籌備工作。</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/施宇蓁.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>施宇蓁</p>
+                                        <span>執祕——<br>需要幫忙就叫我吧</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/邱怡婕.jpg" style="position:relative;left:-4px;width: 130px;">
+
+                                        <p>邱怡婕</p>
+                                        <span>總務——<br>幫大家顧錢</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/丘博元.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>丘博元</p>
+                                        <span>作品總監——<br>打雜(如果有的話</span>
+                                        
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="crew2" class="crew_word">
+
+                            <img id="crew_img2" src="./photo/about/plate.png" width="90%">
+
+                            <p onmouseenter="rotate2();" onmouseout="rotate_back2();" onclick="popup2();" id="crew_p2">網站組</p>
+                            
+                        </div>
+
+                        <div id="crew_popup2" class="crew_popup">
+
+                            <div class="popupBox">
+
+                                <div class="popup">
+
+                                    <a onclick="close2()" href="javascript:void(0)"><img class="crew_close" src="./photo/about/crew_close.png" alt="close" width="50px" style="position:absolute;top:20px;right:20px;z-index:200;"></a>
+
+                                    <img class="crew_wood" src="./photo/about/crew_wood.png" width="250px">
+                                    <h3>網站組</h3>
+
+                                    <p>畢展網站魔術師！</p>
+
+                                    <div class="people">
+
+                                        <img src="./work photos/member/邱靖雯.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>邱靖雯</p>
+                                        <span>小小工程師</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/施奕如.png" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>施奕如</p>
+                                        <span>小小工程師</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/高郁婷.JPG" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>高郁婷</p>
+                                        <span>小小介面設計師</span>
+                                        
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="crew3" class="crew_word">
+
+                            <img id="crew_img3" src="./photo/about/plate.png" width="90%">
+
+                            <p onclick="popup3();"  onmouseenter="rotate3();" onmouseout="rotate_back3();" id="crew_p3">行銷組</p>
+                            
+                        </div>
+
+                        <div id="crew_popup3" class="crew_popup">
+
+                            <div class="popupBox">
+
+                                <div class="popup">
+
+                                    <a onclick="close3()" href="javascript:void(0)"><img class="crew_close" src="./photo/about/crew_close.png" alt="close" width="50px" style="position:absolute;top:20px;right:20px;z-index:200;"></a>
+
+                                    <img class="crew_wood" src="./photo/about/crew_wood.png" width="250px">
+                                    <h3>行銷組（線上）</h3>
+                                    <p style="margin-top:30px;">大家辛苦了</p>
+
+                                    <div class="people">
+
+                                        <img src="./work photos/member/林禹丞.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>林禹丞</p>
+                                        <span>組長</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/陳艾潼.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>陳艾潼</p>
+                                        <span>企劃發想</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="https://fakeimg.pl/130x130/333333/fff" style="position:relative;left:-4px;">
+
+                                        <p>陳婉宣</p>
+                                        <span>企劃發想</span>
+                                        
+                                    </div>
+
+                                    <div class="people">
+
+                                        <img src="./work photos/member/王湘瑜.JPG" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>王湘瑜</p>
+                                        <span>企劃發想</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/王姵淇.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>王姵淇</p>
+                                        <span>攝影負責人</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/陳嶸.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>陳嶸</p>
+                                        <span>導演</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/李汎櫻.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>李汎櫻</p>
+                                        <span>粉專小編</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/徐曼妮.png" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>徐曼妮</p>
+                                        <span>演員</span>
+                                        
+                                    </div>
+
+                                    <img style="display:block;margin:auto;position:relative;top:25px;" src="./photo/about/crew_wood.png" width="250px">
+                                    <h3 style="top:-43px;">行銷組（線下）</h3>
+                                    <p style="top:-25px;">大家一起玩！</p>
+
+                                    <div class="people" style="top:-10px;">
+
+                                        <img src="./work photos/member/劉凡瑜.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>劉凡瑜</p>
+                                        <span>組長爹斯。</span>
+                                        
+                                    </div>
+
+                                    <div class="people" style="top:-10px;">
+
+                                        <img src="https://fakeimg.pl/130x130/333333/fff" style="position:relative;left:-4px;">
+
+                                        <p>陳天心</p>
+                                        <span>企劃發想</span>
+                                        
+                                    </div>
+
+                                    <div class="people" style="top:-10px;">
+
+                                        <img src="https://fakeimg.pl/130x130/333333/fff" style="position:relative;left:-4px;">
+
+                                        <p>薛復蓉</p>
+                                        <span>企劃發想</span>
+                                        
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="crew4" class="crew_word">
+
+                            <img id="crew_img4" src="./photo/about/plate.png" width="90%">
+
+                            <p onclick="popup4();" onmouseenter="rotate4();" onmouseout="rotate_back4();" id="crew_p4">公關組</p>
+                            
+                        </div>
+
+                        <div id="crew_popup4" class="crew_popup">
+
+                            <div class="popupBox">
+
+                                <div class="popup">
+
+                                    <a onclick="close4()" href="javascript:void(0)"><img class="crew_close" src="./photo/about/crew_close.png" alt="close" width="50px" style="position:absolute;top:20px;right:20px;z-index:200;"></a>
+
+                                    <img class="crew_wood" src="./photo/about/crew_wood.png" width="250px">
+                                    <h3>公關組</h3>
+
+                                    <p>被已讀不回！</p>
+
+                                    <div class="people">
+
+                                        <img src="./work photos/member/張蓉菁.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>張蓉菁</p>
+                                        <span>公關</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/白茹伊.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>白茹伊</p>
+                                        <span>公關</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/李家瑜.JPG" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>李家瑜</p>
+                                        <span>公關</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="https://fakeimg.pl/130x130/333333/fff" style="position:relative;left:-4px;">
+
+                                        <p>傅思瑜</p>
+                                        <span>公關</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/楊世莉.png" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>楊世莉</p>
+                                        <span>公關</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/孫國璽.JPG" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>孫國璽</p>
+                                        <span>公關</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/邱子維.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>邱子維</p>
+                                        <span>公關</span>
+                                        
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="crew5" class="crew_word">
+
+                            <img id="crew_img5" src="./photo/about/plate.png" width="90%">
+
+                            <p onclick="popup5();"  onmouseenter="rotate5();" onmouseout="rotate_back5();" id="crew_p5">美宣組</p>
+                            
+                        </div>
+
+                        <div id="crew_popup5" class="crew_popup">
+
+                            <div class="popupBox">
+
+                                <div class="popup">
+
+                                    <a onclick="close5()" href="javascript:void(0)"><img class="crew_close" src="./photo/about/crew_close.png" alt="close" width="50px" style="position:absolute;top:20px;right:20px;z-index:200;"></a>
+
+                                    <img class="crew_wood" src="./photo/about/crew_wood.png" width="250px">
+                                    <h3>美宣組</h3>
+
+                                    <p>我們美畢ㄌ！</p>
+
+                                    <div class="people">
+
+                                        <img src="./work photos/member/楊竣筑.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>楊竣筑</p>
+                                        <span>組長</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/楊秀蓁.JPG" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>楊秀蓁</p>
+                                        <span>主視覺</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/彭麗伃.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>彭麗伃</p>
+                                        <span>網站編排</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/石采宸.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>石采宸</p>
+                                        <span>粉專呈現</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/鄭惠心.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>鄭惠心</p>
+                                        <span>小宣設計</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="https://fakeimg.pl/130x130/333333/fff" style="position:relative;left:-4px;">
+
+                                        <p>梁卓然</p>
+                                        <span>展場視覺</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/蕭珺文.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>蕭珺文</p>
+                                        <span>書面美編</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="https://fakeimg.pl/130x130/333333/fff" style="position:relative;left:-4px;">
+
+                                        <p>黃新畬</p>
+                                        <span>視覺創意</span>
+                                        
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="crew6" class="crew_word">
+
+                            <img id="crew_img6" src="./photo/about/plate.png" width="90%">
+
+                            <p onclick="popup6();" onmouseenter="rotate6();" onmouseout="rotate_back6();" id="crew_p6">場器組</p>
+                            
+                        </div>
+
+                        <div id="crew_popup6" class="crew_popup">
+
+                            <div class="popupBox">
+
+                                <div class="popup">
+
+                                    <a onclick="close6()" href="javascript:void(0)"><img class="crew_close" src="./photo/about/crew_close.png" alt="close" width="50px" style="position:absolute;top:20px;right:20px;z-index:200;"></a>
+
+                                    <img class="crew_wood" src="./photo/about/crew_wood.png" width="250px">
+                                    <h3>場器組</h3>
+
+                                    <p>找找場地ㄛ！</p>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/劉智誠.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>劉智誠</p>
+                                        <span>組長大大</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/蘇芳威.png" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>蘇芳威</p>
+                                        <span>新竹場地</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/郭揚.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>郭揚</p>
+                                        <span>臺北場地</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/胡書瑜.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>胡書瑜</p>
+                                        <span>臺北場地</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/黎奐雲.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>黎奐雲</p>
+                                        <span>佈展廠商</span>
+                                        
+                                    </div>
+
+                                    <div class="people" >
+
+                                        <img src="./work photos/member/周家立.jpg" style="position:relative;left:-4px;width:130px;">
+
+                                        <p>周家立</p>
+                                        <span>食物廠商</span>
+                                        
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                
+
+            </div>
+
+        </div>
+
+        <div id="teachers">
+
+            <div class="teacherWord">
+                <img src="./photo/about/燈籠.png" width="80px" style="display:inline;">
+                <span>班導師</span>
+                <img src="./photo/about/燈籠.png" width="80px" style="display:inline;">
+            </div>
+
+            <div class="teacher">
+
+                <div class="teacherLeft">
+
+                    <img src="./photo/about/陶振超老師.jpg">
+
+                </div>
+
+                <div class="teacherRight">
+
+                        <h4>陶振超</h4>
+
+                        <p>一二三四五六七八九十一二三一二三四五六七八九十一二三一二三四五六七八九十一二三</p>
+
+                </div>
+
+            </div>
+
+            <div class="teacher">
+
+                <div class="teacherLeft">
+
+                    <div class="floatRight">
+
+                        <img src="./photo/about/陳維平老師.jpg">
+
+                    </div>
+
+                </div>
+
+                <div class="teacherRight">
+
+                    <div class="floatLeft">
+
+                        <h4>陳維平</h4>
+
+                        <p>一二三四五六七八九十一二三一二三四五六七八九十一二三一二三四五六七八九十一二三
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footerTop">
+
+            <p style="width:310px;margin:0 auto;">國立陽明交通大學</p>
+
+            <p>傳播與科技學系111級畢業成果展</p>
+
+            <a href="https://www.facebook.com/CTGradShow" target="_blank"><img id="FB" src="./photo/fb.png" alt="FB" width="45px"></a>
+
+            <p style="font-family:LucidaGrande;letter-spacing:4px;margin-top:30px;">©NYCU DCAT. All rights reserved.</p>
+
+            <img id="top" src="./photo/top.png" width="30px">
+
+            <img id="line" src="./photo/line.png" width="100%">
+    
+        </div>
+
+        <footer id="footer" class="com_footer">
+
+            <div class="footerLeft" style="float:left;margin-left:25px;">
+
+                <img class="japan" src="./photo/footer.png" width="35px">
+                <p style="font-size:22px;display:inline;position: relative;top:3px;">開幕茶會</p>
+                <p class="footerTime">時間&nbsp;&nbsp;2021年12月10日 13:30-20:30</p>
+                <p class="footerTime">地點&nbsp;&nbsp;新竹市東區大學路1001號 國立陽明交通大學浩然圖書館 B1 國際會議廳</p>
+
+            </div>
+
+            <div class="footerRight" style="float:right;margin-right:50px;margin-left:25px;">
+
+                <img class="japan" src="./photo/footer.png" width="35px">
+                <p style="font-size:22px;display:inline;position: relative;top:3px;">正式展覽</p>
+                <p class="footerTime">時間&nbsp;&nbsp;2021年12月17日至12月19日 9:00~18:00</p>
+                <p class="footerTime">地點&nbsp;&nbsp;臺北市萬華區康定路173巷剝皮寮演藝廳145號～151號</p>
+                    
+            </div>
+
+            <!-- <div class="sponsor">
+
+                <a href="#" target="_blank"><img src="./photo/logo.png" width="70px"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png" width="70px"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png" width="70px"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png" width="70px"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png" width="70px"></a>
+                
+            </div> -->
+
+            
+
+        </footer>
+
+        <footer class="phone_footer">
+
+            <div class="footerUp"> 
+
+                <div id="footerUpLeft">
+
+                    <img id="phone_footer" src="./photo/phone_footer.png" width="225px" style="float:left;">
+                
+                </div>
+    
+                <div id="footerUpRight">
+                    
+                    <div id="footerUpRight_Left">
+                        <p>時間</p>
+                        <p style="margin-top:42px;">地點</p>
+                    
+                    </div>
+    
+                    <div id="footerUpRight_Right">
+    
+                        <span>2021年12月10日 13:30～20:30</span>
+                        <br>
+                        <span>新竹市東區大學路1001號<br>國立陽明交通大學<br>浩然圖書館B1國際會議廳</span>
+                    
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="footerDown">
+
+                <div id="footerDownLeft">
+                
+                    <div id="footerDownLeft_Left">
+                        <p>時間</p>
+                        <p style="margin-top:45px;">地點</p>
+                    
+                    </div>
+    
+                    <div id="footerDownLeft_Right">
+    
+                        <span>2021年12月17日至12月19日 9:00~18:00</span>
+                        <br>
+                        <span>台北市萬華區康定路173巷<br>剝皮寮演藝廳</span>
+                    
+                    </div>
+                    
+                </div>
+
+                <div id="footerDownRight">
+
+                    <img id="phone_footer2" src="./photo/phone_footer2.png" width="250px">
+                
+                </div>
+
+            </div>
+           
+            <!-- <div class="sponsor">
+
+                <a href="#" target="_blank"><img src="./photo/logo.png" style="margin-left: 0;"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png"></a>
+                <a href="#" target="_blank"><img src="./photo/logo.png"></a>
+                
+            </div> -->
+            
+        </footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="same.js"></script>
+    <script src="about.js"></script>
+    
+</body>
+</html>
