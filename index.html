@@ -16,113 +16,34 @@
 
     <div class="container">
 
-         <!-- -----------------網頁版nav---------------------- -->
+        <!-- -----------------左上角選單---------------------- -->
 
-        <nav id="com_nav"> 
+        <div id="menu">
 
-            <div class="nav_left">
-
-                <a href="index.html"><img src="./photo/icon.png" alt="icon" style="margin-top: 10px;"></a>
-            
-            </div>
-
-            <div class="nav_right">
-
-                <div class="nav_about">
-
-                    <a href="about.html">關於作品</a>
-
-                </div>
-
-                <div class="nav_about">
-
-                    <a href="aboutworks.html">關於工作室</a>
-                    
-                </div>
+            <img id="menu_icon" onclick="menuIn();" src="./photo/menu.png" alt="menu" width="50px"> 
+       
+        </div>
         
-            </div>
-
-        </nav>
-
-        <!-- -----------------手機版nav---------------------- -->
-        <nav id="phone_nav">
-
-            <div id="myNav" class="phone_menu overlay">
-                
-                <a href="javascript:void(0)" onclick="closeNav()" style="margin-bottom:10px;position:relative;bottom:10px;">&times;</a>
-
-                <div class="overlay-content">
-                    <a href="index.html" style="position:relative;bottom:40px;">首頁</a>
-
-                    <div class="about">
-                            
-                        <a href="about.html" style="margin-bottom:10px;">關於展覽</a>
-                        <a href="about.html"><img src="./photo/menu_line2.png" width="300px" style="display:block;margin:auto;position:relative;bottom:50px;"></a>
-
-                        <p><a href="about.html#idea" id="font-size">展覽理念</a></p>
-                        <p><a href="about.html#place" id="font-size">展覽地點</a></p>
-                        <p><a href="about.html#team" id="font-size">籌備團隊</a></p>
-                        <p><a href="about.html#teachers" id="font-size">班導師</a></p>
-
-                    </div>
-                    
-                    <div class="aboutworks">
-                        <a href="aboutworks.html"style="margin-bottom:10px;">關於作品</a>
-                        <a href="aboutworks.html"><img src="./photo/menu_line2.png" width="300px" style="display:block;margin:auto;position:relative;bottom:50px;"></a>
-                        
-                        <p><a href="aboutworks.html#multimedia" id="font-size">多媒體</a></p>
-                        <p><a href="aboutworks.html#theses" id="font-size" style="margin-bottom:30px;">論文</a></p>
-                    
-                    </div>
-                    
-                </div>
-
-            </div>
-
-            <img id="phone_menu" src="./photo/menu_phone.png" alt="menu" width="70px" onclick="openNav()">
-
-            <a href="index.html"><img id="phone_logo" src="./photo/icon.png" alt="logo" width="60px" style="margin-top: -20px;"></a>
-
-        </nav>
-
-        <!-- -----------------網頁版sidebar---------------------- -->
-
         <div id="sidebar" onmouseleave="menuOut();">
 
             <a href="javascript:void(0)" onclick="closeSide()" style="position:relative;left:150px;top:10px;">&times;</a>
 
-            <a href="index.html" style="top:5%;">首頁</a>
+            <a href="index.html" style="top:8%;">首頁</a>
 
-            <a href="about.html" style="top:20%;">關於展覽</a>
-            <img src="./photo/menu_line.png" width="100%" style="position: absolute;top:29%;left:15%;">
-            <a href="about.html#idea" style="top:33%;font-size:16px;">展覽理念</a>
-            <a href="about.html#place" style="top:41%;font-size:16px;">展覽地點</a>
-            <a href="about.html#team" style="top:49%;font-size:16px;">籌備團隊</a>
-            <a href="about.html#teachers" style="top:57%;font-size:16px;">班導師</a>
+            <p style="top:17%; border-bottom: 2px solid #1E293B;">關於作品</p>
+            <a href="about.html#idea" style="top:35%;font-size:16px;">商業廣告</a>
+            <a href="about.html#place" style="top:43%;font-size:16px;">音樂MV</a>
+            <a href="about.html#team" style="top:51%;font-size:16px;">活動紀錄</a>
+            <a href="about.html#teachers" style="top:59%;font-size:16px;">社群素材建立</a>
 
-            <a href="aboutworks.html" style="top:70%;">關於作品</a>
-            <img src="./photo/menu_line.png" width="100%" style="position: absolute;top:79%;left:15%;">
-            <a href="aboutworks.html#multimedia" style="top:82%;font-size:16px;">多媒體</a>
-            <a href="aboutworks.html#theses" style="top:90%;font-size:16px;">論文</a>
+            <a href="aboutworks.html" style="top:73%;">關於團隊</a>
 
-        </div>
-
-        <div id="com_menu">
-
-            <img id="menu" onmouseenter="menuIn();" src="./photo/menu.png" alt="menu" width="25px"> 
-       
-        </div>
+        </div> 
 
         <!-- -----------------首頁介紹---------------------- -->
 
         <div class="hero">
-            <!-- 左側文字內容 -->
-            <div class="hero-text">
-                <p>影像工作室</p>
-                <h1>歡樂仙桶</h1>
-            </div>
-    
-            <!-- 右側圖片區 -->
+            <!-- 左側圖片 -->
             <div class="hero-image-container">
                 <div class="hero-image">
                     <img src="./photo/showcase1.JPG" class="curved-image active" alt="作品1">
@@ -130,17 +51,43 @@
                     <img src="./photo/showcase3.JPG" class="curved-image" alt="作品3">
                 </div>
             </div>
+    
+            <!-- 右側圖片 -->
+            <img class="hero-text" src="./photo/歡樂仙桶.png" alt="歡樂仙桶" style="width: 150px;">
                 
+        </div>
+        
+        <div class="camera">
+            <img src="./photo/cam.png" style="width:200px;" alt="cam">
+        </div>
+
+        <div class="section2">
+
+            
+
         </div>
 
         <footer class="footer">
-            <p>聯絡信箱: happysanton0321@gmail.com</p>
-            <p>聯絡電話: 0989-979-400</p>
-            <div class="social-media">
-                <a href="https://www.instagram.com/santon.w" target="_blank" aria-label="Instagram">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram" class="instagram-icon">
-                </a>
+
+            <div class="footer_element">
+
+                <div class="footer_inner">
+                    <img src="./photo/mail.png" style="width: 20px;" alt="mail_icon">
+                    <p>happysanton0321@gmail.com</p>
+                </div>
+
+                <div class="footer_inner">
+                    <img src="./photo/phone.png" style="width: 15px; position: relative; left: 0.5%;" alt="photo_icon">
+                    <p style="position: relative; left: 1.5%;">0989-979-400</p>
+                </div>
+
+                <div class="footer_inner">
+                    <img src="./photo/ig.png" style="width: 20px;" alt="ig_icon">
+                    <a href="https://www.instagram.com/santon.w">@santon.w</a>
+                </div>
+
             </div>
+            
         </footer>
 
     </div>

@@ -14,7 +14,6 @@ body{
 
 .container{
     overflow:hidden;
-    height: auto;
     font-family: "Noto Serif TC";
     letter-spacing: 8px;
     text-indent: 8px;
@@ -22,203 +21,84 @@ body{
     color: white;
 }
 
-#com_nav{
-    margin: 10px auto;
-    background-color:#1E293B;
-    display: flex;
+#menu{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
 }
 
-.nav_left{
-    justify-content:space-around;
-    width:20%;
-    margin-left:50px;
+#menu_icon{
+    transition: transform 0.5s ease-out;
 }
 
-.nav_left img{
-    width: 80px;
-}
-
-.nav_right{
-    justify-content:space-around;
-    width:80%;
-    text-align:right;
-    margin-right: 100px;
-    line-height: 80px;
-}
-
-.nav_about{
-    display: inline;
-    margin-left: 40px;
-}
-
-.nav_about a{
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.nav_about a:hover{
-    color:#ffde85;
-}
-
-#phone_nav{
-    display: none;
+#menu_icon:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 #sidebar{
-    background-image: url(./photo/menu_bg.jpg);
+    background-color: white;
     background-size: 100%;
+    border-radius: 10px;
     width: 200px;
     height: 375px;
     position: fixed;
-    top: 20%;
-    z-index: 1;
+    top: 12%;
+    left: 2%;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    z-index: 1;
 }
 
-#sidebar a{
+#sidebar a,#sidebar p{
     position: absolute;
-    left:25%;
+    left:18%;
     font-size: 24px;
     text-decoration: none;
     letter-spacing: 3px;
+    color: #1E293B;
 }
 
 #sidebar a:hover{
-    color:#c38947;
+    color:#BFA584;
 }
 
-#com_menu{
-    width: 200px;
-    height: 375px;
-    line-height: 375px;
-    position: fixed;
-    left: 10px;
-    top: 20vh;
-    z-index: 1;
-}
-
-.empty{
-    display:none;
+.section2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./photo/section2.png);
+    background-size: cover;
 }
 
 .footer {
-    background-color: #1E293B;
+    background-color: #1C1C1B;
+    height: 250px;
     text-align: center; 
     padding: 20px 0; 
     font-size: 1rem;
     letter-spacing: 3px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    border-top: 0.5px solid #ffffff;
-    margin-top: 50px;
+    margin-top: -30px;
+    border-radius: 40px 40px 0 0;
+   
 }
 
-/* IG 圖示 */
-.social-media {
+.footer_element{
+    width: 300px;
+    margin: 50px auto;
+}
+
+.footer p, .footer a{
+    color: #ffffff;
+    font-size: 12px;
+    display: inline;
+}
+
+.footer_inner{
+    text-align: left;
     margin-top: 10px;
 }
 
-.instagram-icon {
-    width: 30px; 
-    height: auto; 
-    transition: transform 0.3s ease;
-}
-
-.instagram-icon:hover {
-    transform: scale(1.1);  /* 滑鼠懸停時放大 */
-}
-
 /* -------------------手機版------------------ */
-
-@media screen and (max-width:1024px){
-    #com_nav, #com_menu,#sidebar{
-        display: none;
-    }
-
-    #phone_nav{
-        display: block;
-        width: 100%;
-        text-align: center;
-        background-color:#0E1E3C ;
-        position: fixed;
-        height: 70px;
-        line-height: 100px;
-        z-index: 1;
-        box-shadow: 0px 1px 5px #071329;
-    }
-
-    #phone_menu{
-        position: fixed;
-        left: 2%;
-        top: 2%;
-    }
-
-    .overlay{
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 3;
-        top: 0;
-        left: 0;
-        background-color: rgb(180, 144, 105,0.9);
-        overflow-x: hidden;
-        transition: 0.5s;
-    }
-    
-    .overlay-content{
-        position: relative;
-        top:0;
-        width:100%;
-        text-align: center;
-    }
-    
-    .overlay a{
-        text-decoration: none;
-        font-size: 36px;
-        color: #ffffff;
-        margin-bottom: 10px;
-    }
-
-    .overlay a:hover{
-        color: #0E1E3C;
-    }
-
-    .overlay p {
-        height: 50px;
-        position: relative;
-        bottom: 100px;
-    }
-
-    .about{
-        height: 350px;
-        position: relative;
-        bottom: 50px;
-    }
-
-    #font-size{
-        font-size: 30px;
-    }
-    
-    .overlay a:focus{
-        color: #f1f1f1;
-    }
-
-    #phone_logo{
-        clear: both;
-        margin: 0 auto;
-    }
-
-    #menu{
-        display: none;
-    }
-
-    #top{
-        width: 25px;
-    }
-}
 
 @media screen and (max-width:768px){
     .overlay a{
