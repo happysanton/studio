@@ -17,9 +17,10 @@ body{
 }
 
 #menu{
+    text-align: right;
     margin-top: 25px;
     margin-bottom: 25px;
-    margin-left: 25px;
+    margin-right: 35px;
 }
 
 #menu_icon{
@@ -39,7 +40,7 @@ body{
     height: 375px;
     position: fixed;
     top: 12%;
-    left: 2%;
+    right: 2%;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     z-index: 1;
@@ -90,55 +91,10 @@ body{
 /* -------------------手機版------------------ */
 
 @media screen and (max-width:768px){
-    .overlay a{
-        font-size: 32px;
-    }
 
-    .overlay p {
-        height: 40px;
-    }
-
-    #font-size{
-        font-size: 26px;
-    }
-
-    .about{
-        height: 300px;
-    }
-
-    .footer {
-        font-size: 0.9rem;  /* 在小螢幕上稍微調小字體 */
-    }
-    .instagram-icon {
-        width: 25px;  /* 在手機上略微縮小圖示 */
-    }
 }
 
 @media screen and (max-width:500px){
-    #phone_menu{
-        width: 125px;
-        left: 0;
-    }
-
-    .overlay a{
-        font-size: 26px;
-        margin-bottom: 0;
-        height: 40px;
-    }
-
-    .overlay p {
-        height: 30px;
-        position: relative;
-        bottom: 100px;
-    }
-
-    .about{
-        height: 190px;
-        bottom: 75px;
-    }
-
-    #font-size{
-        font-size: 20px;
-    }
+    
 
 }
