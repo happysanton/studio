@@ -270,7 +270,7 @@ footer{
         z-index: 1;
         top: 18%;
         left: 10%;
-        filter: drop-shadow(5px 5px 8px black);
+        filter: drop-shadow(5px 5px 8px rgb(0, 0, 0,0.5));
     }
 
     .hero-image-container {
