@@ -268,9 +268,9 @@ footer{
     .hero-text {
         position: absolute;
         z-index: 1;
-        top: 15%;
+        top: 18%;
         left: 10%;
-        filter: drop-shadow(5px 5px 10px black);
+        filter: drop-shadow(5px 5px 8px black);
     }
 
     .hero-image-container {
