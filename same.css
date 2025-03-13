@@ -18,16 +18,17 @@ body{
 
 #menu{
     text-align: right;
+    height: 50px;
     margin-top: 25px;
     margin-bottom: 25px;
     margin-right: 35px;
 }
 
-#menu_icon{
+#menu_icon,#santon{
     transition: transform 0.5s ease-out;
 }
 
-#menu_icon:hover{
+#menu_icon:hover,#santon:hover{
     cursor: pointer;
     transform: scale(1.2);
 }

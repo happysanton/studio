@@ -102,6 +102,7 @@ h1{
     background-color: white;
     color: #1E293B;
     position: relative;
+    bottom: -50px;;
     z-index: 1;
 }
 
@@ -138,7 +139,7 @@ h1{
 .section2_item_container{
     width: 100%;
     position: absolute;
-    top: 30%;
+    top: 40%;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 響應式排列 */
     display: flex;
     flex-wrap: wrap; /* 確保換行 */
@@ -248,6 +249,10 @@ footer{
 
     .scroll{
         top: -170px;
+    }
+
+    .marquee-container{
+        bottom: 0;
     }
 
     .section2{
