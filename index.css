@@ -278,6 +278,10 @@ footer{
         height: 50vh;  /* 更小的圖片顯示區域 */
     }
 
+    .curved-image {
+        border-radius: 0;
+    }
+
     .camera img{
         display: none;
     }
