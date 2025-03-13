@@ -266,20 +266,24 @@ footer{
 
 @media screen and (max-width:539px){
     .hero-text {
-        width: 50px;
+        position: absolute;
+        z-index: 1;
+        top: 15%;
+        left: 10%;
+        filter: drop-shadow(5px 5px 10px black);
     }
 
     .hero-image-container {
-        width: 85%;
-        height: 40vh;  /* 更小的圖片顯示區域 */
+        width: 100%;
+        height: 50vh;  /* 更小的圖片顯示區域 */
     }
 
     .camera img{
-        width: 100px;
+        display: none;
     }
 
     .scroll{
-        top: -80px;
+        top: -0px;
         right: -20px;
     }
     
