@@ -1,0 +1,77 @@
+#menu a{
+    position: absolute;
+    left: 50%;
+}
+
+.section1{
+    width: 100%;
+    position: relative;
+}
+
+.section1-title{
+    width: 100%;
+    margin-left: 100px;    
+
+}
+
+.choose{
+    width: 275px;
+    text-align: center;
+    margin: 25px auto;
+    border-bottom: 2px dashed #ffffff;
+}
+
+.choose h2,p{
+    display: inline;
+    font-size: 20px;
+}
+
+.choose a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.choose a:hover{
+    color: #BFA584;
+}
+
+.video{
+    margin: 30px auto 0;
+    padding-top: 20px;
+}
+
+.video2,.video3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.videoBox{
+    position: relative;
+    display: inline-block;
+    flex: none;
+}
+
+.video3 .videoBox{
+    width: 326px;
+    margin: 0 30px 50px;
+}
+
+.video2 .videoBox{
+    width: 560px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.video2 .videoBox iframe{
+    width: 560px;
+    height: 315px;
+}
+
+.videoBox span{
+    position: absolute;
+    right: -8px;
+    top: 0;
+    font-size: 14px;
+    color: #999999;
+}
