@@ -165,5 +165,9 @@
     .videoBox{
         border-right: none;
     }
+
+    .videoBox:nth-child(3n) {
+        border-right: none;
+    }
    
 }
