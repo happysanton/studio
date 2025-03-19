@@ -63,6 +63,8 @@
 
 .videoBox iframe{
     aspect-ratio: 16 / 9;
+    width: 100%;
+    display: block;
 }
 
 .videoBox p{
