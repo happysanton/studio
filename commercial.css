@@ -153,6 +153,10 @@
 }
 
 @media screen and (max-width:500px){
+    .section1-title{
+        margin-left: 50px;
+    }
+    
     .video{
         grid-template-columns: repeat(1, 1fr); /* 變成兩欄 */
     }
