@@ -130,6 +130,10 @@
         border-right: 2px solid white;
     }
 
+    .videoBox:nth-child(2n){
+        border-right:none ;
+    }
+
     .note{
         margin-bottom: 70px;
     }
@@ -153,13 +157,13 @@
         grid-template-columns: repeat(1, 1fr); /* 變成兩欄 */
     }
 
-    .videoBox{
-        border-right: none;
-    }
-
     .videoBox p{
         font-size: 14px;
         letter-spacing: 3px;
+    }
+
+    .videoBox{
+        border-right: none;
     }
    
 }
