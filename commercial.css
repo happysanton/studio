@@ -153,6 +153,10 @@
         grid-template-columns: repeat(1, 1fr); /* 變成兩欄 */
     }
 
+    .videoBox{
+        border-right: none;
+    }
+
     .videoBox p{
         font-size: 14px;
         letter-spacing: 3px;
