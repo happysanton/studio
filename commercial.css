@@ -72,6 +72,10 @@
     letter-spacing: 3px;
 }
 
+.videoBox a:hover{
+    color: #BFA584;
+}
+
 .cover-image{
     position: relative;
     width: 100%; 
