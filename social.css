@@ -1,0 +1,77 @@
+*,h1,h2,h3{
+    font-family: "Noto Serif TC", serif;
+}
+
+.social{
+    padding: 0 70px;
+}
+
+.number{
+    font-family: "Brush Script MT", "Brush Script", cursive;
+    font-size: 120px;
+}
+
+.social h2{
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    display:inline;
+    position: relative;
+    top:-25px;
+    margin-left: 10px;
+    background-image: linear-gradient(transparent 60%, #64acb8 40%);
+}
+
+#chai9,#guitar,#music{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.chai9,.guitar,.music{
+    width: 400px;
+    margin: 0 20px 50px;
+}
+
+.chai9 h4,.guitar h4{
+    width: 90px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.guitar h4{
+    background-image: linear-gradient(transparent 60%, #65CCD1 40%);
+}
+
+.photo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.photo img{
+    width: 100%;
+    position: relative;
+    top: -72px;
+}
+
+@media screen and (max-width:500px){
+    .chai9,.guitar,.music{
+        margin: 0 0 30px;
+    }
+
+    #chai9,#guitar,#music{
+        width: 326px;
+        margin: 0 auto;
+    }
+
+    .social{
+        padding: 0 15px;
+    }
+
+    .social h2{
+        font-size: 16px;
+    }
+    
+}

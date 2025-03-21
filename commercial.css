@@ -96,8 +96,9 @@
     border-radius: 10px;
 }
 
-.cover:hover{
-    opacity: 50%;
+.cover-image:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.02);
     cursor: pointer;
 }
 
