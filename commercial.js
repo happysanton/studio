@@ -1,4 +1,4 @@
-document.querySelectorAll('.play-button').forEach(function(button) {
+document.querySelectorAll('.cover-image').forEach(function(button) {
     button.addEventListener('click', function() {
         // 找到對應的影片區塊（最接近的父層 .videoBox）
         var videoBox = button.closest('.videoBox');
