@@ -60,6 +60,14 @@ body{
     color:#BFA584;
 }
 
+.videoBox a{
+    text-decoration: none;
+}
+
+.videoBox a:hover{
+    color: #BFA584;
+}
+
 .footer {
     background-color: #1C1C1B;
     height: 250px;
