@@ -4,6 +4,7 @@
 
 .social{
     padding: 0 70px;
+    margin-bottom: 150px;
 }
 
 .number{
@@ -53,7 +54,28 @@
 .photo img{
     width: 100%;
     position: relative;
-    top: -72px;
+    top: -20px;
+}
+
+.videobox iframe{
+    width: 400px;
+    aspect-ratio: 16 / 9;
+}
+
+@media screen and (max-width:768px){
+    .videobox{
+        padding: 0;
+    }
+
+    .photo{
+        margin-top: 35px;
+    }
+
+    .social h2{
+        font-size: 30px;
+    }
+
+
 }
 
 @media screen and (max-width:500px){
@@ -71,7 +93,7 @@
     }
 
     .social h2{
-        font-size: 16px;
+        font-size: 26px;
     }
     
 }
