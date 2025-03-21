@@ -321,6 +321,7 @@ footer{
     }
 
     .note{
-        margin-bottom:150px;
+        margin-bottom:180px;
+        padding: 25px;
     }
 }
