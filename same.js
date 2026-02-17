@@ -4,6 +4,7 @@ var top = document.getElementById("top");
 var com_menu = document.getElementById("com_menu");
 var myAnchor = document.getElementsByClassName("myAnchor");
 var wood1 =  document.getElementById("wood_1");
+var slide_container = document.getElementById("slide_container");
 
 $(document).ready(function() {
     $('#top').click(function(){
@@ -19,7 +20,7 @@ function menuIn(){
 }
 
 function menuOut(){
-    sidebar.style.opacity = "0";
+    sidebar.style.display = "none";
     com_menu.style.pointerEvents = "auto";
     wood1.style.zIndex = "2";
 }
@@ -30,9 +31,10 @@ function openNav() {
  
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
+   
 }
 
 function closeSide() {
-    sidebar.style.opacity = "0";
+    sidebar.style.display = "none";
     com_menu.style.pointerEvents = "auto";
 }
