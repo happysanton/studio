@@ -131,23 +131,29 @@ h1{
 
 .section2{
     width: 100%;
-    height: 1000px;
+    height: 1200px;
     background-image: url(./photo/section2.png);
     background-size: cover;
     position: relative;
     top: -180px;
-    
+   
+}
+
+#section2_item_container{
+    position: relative;
+    top: 200px;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); /* 強制初始狀態為三欄 */
+    justify-items: center; /* 讓內容在格線內置中 */
 }
 
 .section2_item_container{
-    width: 100%;
-    position: absolute;
-    top: 40%;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 響應式排列 */
-    display: flex;
-    flex-wrap: wrap; /* 確保換行 */
-    justify-content: center; /* 水平置中 */
-    align-items: center; /* 垂直置中 */
+    max-width: 500px;
+    max-height: 400px;
+    justify-items: center; /* 讓內容在格線內置中 */
+    position: relative;
+    top: 25%;
+    overflow: hidden;
 }
 
 /* 每個作品封面 */
@@ -219,9 +225,6 @@ footer{
 /* -----------------手機版----------------- */
 
 @media screen and (max-width:1349px){
-    .section2{
-        height: 1400px;
-    }
 
     .section2_item_container{
         top: 25%;
@@ -231,6 +234,14 @@ footer{
 @media screen and (max-width:1024px){
     .section2_item img {
         opacity: 100%;
+    }
+
+    .section2{
+        height: 1600px;
+    }
+
+    #section2_item_container{
+        grid-template-columns: repeat(2, 1fr); /* 變成兩欄 */
     }
 }
 
@@ -273,7 +284,7 @@ footer{
     }
 
     .section2{
-        height: 1700px;
+        height: 1600px;
     }
 
     .section2_item_container{
@@ -313,11 +324,15 @@ footer{
     }
 
     .section2{
-        height: 2500px;
+        height: 2900px;
     }
 
     .section2_item_container{
         top: 8%;
+    }
+
+    #section2_item_container{
+        grid-template-columns: repeat(1, 1fr); /* 變成兩欄 */
     }
 
     .note{

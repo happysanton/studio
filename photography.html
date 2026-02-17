@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="same.css">
+    <link rel="stylesheet" href="photography.css">
+    <link rel="icon" href="./photo/黑仙.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">    
+    <title>歡樂仙桶影像工作室</title>
+</head>
+
+<body>
+    
+
+    <div class="container">
+
+        <div id="menu">
+
+            <img id="menu_icon" onclick="menuIn();" src="./photo/menu.png" alt="menu" width="50px"> 
+            <a href="index.html"><img src="./photo/icon.png" alt="仙" width="50px"></a>
+       
+        </div>
+        
+        <div id="sidebar" onmouseleave="menuOut();">
+
+            <a href="javascript:void(0)" onclick="closeSide()" style="position:relative;left:150px;top:10px;">&times;</a>
+
+            <a href="index.html" style="top:8%;font-weight:700;">首頁</a>
+
+            <p style="top:16%; border-bottom: 2px solid #1E293B;font-weight:700;">關於作品</p>
+            <a href="commercial.html" style="top:38%;font-size:16px;font-weight:600;">商業廣告</a>
+            <a href="mv.html" style="top:47.5%;font-size:16px;font-weight:600;">音樂MV</a>
+            <a href="activity.html" style="top:57%;font-size:16px;font-weight:600;">活動紀錄</a>
+            <a href="tutorial.html " style="top:67%;font-size:16px;font-weight:600;">教學影片</a>
+            <a href="reels.html" style="top:76.5%;font-size:16px;font-weight:600;">短影音</a>
+            <a href="photography.html" style="top:86%;font-size:16px;font-weight:600;">平面攝影</a>
+
+            <!-- <a href="about.html" style="top:80%;font-weight:700;">關於團隊</a> -->
+
+        </div> 
+
+        <div class="section1">
+
+            <div class="section1-title">
+
+                <h1 style="font-size:46px;font-weight:600;letter-spacing:15px;">平面攝影</h1>
+                <h3 style="font-size:18px;letter-spacing:1px;">Photography</h3>
+
+            </div>
+
+        </div>
+
+        <div class="slide_container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="photo/photography/藝聲家1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="photo/photography/藝聲家2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="photo/photography/藝聲家3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="photo/photography/藝聲家4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="photo/photography/藝聲家5.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="photo/photography/藝聲家6.jpg" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="column">
+                <img class="demo cursor" src="photo/photography/藝聲家1.jpg" style="width:100%" onclick="currentSlide(1)" alt="藝聲家交響樂團創團音樂會【交響選粹】">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="photo/photography/藝聲家2.jpg" style="width:100%" onclick="currentSlide(2)" alt="藝聲家交響樂團創團音樂會【交響選粹】">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="photo/photography/藝聲家3.jpg" style="width:100%" onclick="currentSlide(3)" alt="藝聲家交響樂團創團音樂會【交響選粹】">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="photo/photography/藝聲家4.jpg" style="width:100%" onclick="currentSlide(4)" alt="藝聲家交響樂團創團音樂會【交響選粹】">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="photo/photography/藝聲家5.jpg" style="width:100%" onclick="currentSlide(5)" alt="藝聲家交響樂團創團音樂會【交響選粹】">
+                </div>
+                <div class="column">
+                <img class="demo cursor" src="photo/photography/藝聲家6.jpg" style="width:100%" onclick="currentSlide(6)" alt="藝聲家交響樂團創團音樂會【交響選粹】">
+                </div>
+            </div>
+        </div>
+        
+        <div class="note">
+
+            <p>更多作品歡迎聯絡我們～</p>
+
+        </div>
+
+        <footer class="footer">
+
+            <div class="footer_element">
+
+                <div class="footer_inner">
+                    <img src="./photo/mail.png" style="width: 20px;" alt="mail_icon">
+                    <p>happysanton0321@gmail.com</p>
+                </div>
+
+                <div class="footer_inner">
+                    <img src="./photo/phone.png" style="width: 15px; position: relative; left: 0.5%;" alt="photo_icon">
+                    <p style="position: relative; left: 1.5%;">0989-979-400</p>
+                </div>
+
+                <div class="footer_inner">
+                    <img src="./photo/ig.png" style="width: 20px;" alt="ig_icon">
+                    <a href="https://www.instagram.com/santon.w">@santon.w</a>
+                </div>
+
+            </div>
+            
+        </footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="same.js"></script>
+    <script src="photograhy.js"></script>
+
+</body>

@@ -1,0 +1,71 @@
+*,h1,h2,h3{
+    font-family: "Noto Serif TC", serif;
+}
+
+.reels{
+    padding: 0 70px;
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
+.number{
+    font-family: "Brush Script MT", "Brush Script", cursive;
+    font-size: 120px;
+}
+
+.reels h2{
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    display:inline;
+    background-image: linear-gradient(transparent 60%, #ffa600 50%);
+}
+
+.reels span{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+#reels{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.videobox{
+    text-align: center;
+    padding: 5%;
+}
+
+@media screen and (max-width:1024px){
+    #reels{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+    .reels h2{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:539px){
+    .story,.guitar,.music{
+        margin: 0 0 30px;
+    }
+
+    .reels{
+        padding: 0 15px;
+    }
+
+    .reels h2{
+        font-size: 26px;
+    }
+
+     #reels{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}

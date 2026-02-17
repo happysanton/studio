@@ -1,0 +1,193 @@
+*,h1,h3{
+    font-family: "Noto Serif TC", serif;
+}
+
+#menu a{
+    position: absolute;
+    left: 50%;
+}
+
+.section1{
+    width: 100%;
+    position: relative;
+}
+
+.section1-title{
+    width: 100%;
+    margin-left: 100px;    
+
+}
+
+.choose{
+    width: 272px;
+    text-align: center;
+    margin: 25px auto;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+.choose h2,.choose p{
+    display: inline;
+    font-size: 20px;
+}
+
+.choose a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.choose a:hover{
+    color: #BFA584;
+}
+
+.slide_container {
+  position: relative;
+  width: 80%;
+  margin: 50px auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.note{
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 14px;
+    padding: 50px;
+}
+
+@media screen and (max-width:1024px){
+    .video{
+        grid-template-columns: repeat(2, 1fr); /* 變成兩欄 */
+        margin-bottom: 70px;
+    }
+
+    .videobox{
+        width: 50%;
+        padding: 30px 20px 30px;
+    }
+
+    .videoBox:nth-child(3n) {
+        border-right: 2px solid white;
+    }
+
+    .videoBox:nth-child(2n){
+        border-right:none ;
+    }
+
+    .note{
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .videoBox{
+        padding: 30px;
+        padding-bottom: 60px;
+    }
+
+    .videoBox p{
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    .section1-title{
+        margin-left: 50px;
+    }
+    
+    .video{
+        grid-template-columns: repeat(1, 1fr); /* 變成兩欄 */
+    }
+
+    .videoBox p{
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+
+    .videoBox{
+        border-right: none;
+    }
+
+    .videoBox:nth-child(3n) {
+        border-right: none;
+    }
+   
+}
