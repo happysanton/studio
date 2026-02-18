@@ -2,6 +2,10 @@
     font-family: "Noto Serif TC", serif;
 }
 
+#sidebar p{
+    left: 0;
+}
+
 .reels{
     margin-bottom: 150px;
     margin-top: 50px;
