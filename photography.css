@@ -100,6 +100,8 @@
   background-color: #222;
   padding: 2px 16px;
   color: white;
+  position: relative;
+  right: -6px;
 }
 
 .row:after {
@@ -127,43 +129,33 @@
 .note{
     margin-bottom: 100px;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     padding: 50px;
 }
 
+.note a{
+    color: white;
+    letter-spacing: 3px
+}
+
+.note a:hover{
+    color: rgb(255, 191, 108);
+}
+
 @media screen and (max-width:1024px){
-    .video{
-        grid-template-columns: repeat(2, 1fr); /* 變成兩欄 */
-        margin-bottom: 70px;
-    }
-
-    .videobox{
-        width: 50%;
-        padding: 30px 20px 30px;
-    }
-
-    .videoBox:nth-child(3n) {
-        border-right: 2px solid white;
-    }
-
-    .videoBox:nth-child(2n){
-        border-right:none ;
-    }
-
     .note{
         margin-bottom: 70px;
     }
 }
 
 @media screen and (max-width:768px){
-    .videoBox{
-        padding: 30px;
-        padding-bottom: 60px;
-    }
-
-    .videoBox p{
-        font-size: 11px;
-        letter-spacing: 2px;
+    .slide_container {
+        width: 90%;
+    
+    }  
+    
+    .note{
+        font-size: 14px;
     }
 
 }
@@ -172,22 +164,8 @@
     .section1-title{
         margin-left: 50px;
     }
-    
-    .video{
-        grid-template-columns: repeat(1, 1fr); /* 變成兩欄 */
-    }
 
-    .videoBox p{
-        font-size: 14px;
-        letter-spacing: 3px;
+     .note{
+        font-size: 12px;
     }
-
-    .videoBox{
-        border-right: none;
-    }
-
-    .videoBox:nth-child(3n) {
-        border-right: none;
-    }
-   
 }
